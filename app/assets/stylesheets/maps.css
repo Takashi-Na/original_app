@@ -1,0 +1,35 @@
+/* ヘッダー */
+.header {
+  display: flex;
+}
+
+.header-left {
+  width: 20vw;
+  height: 15vh;
+  background-color: antiquewhite;
+}
+
+.header-right {
+  width: calc(100vw - 20vw);
+  height: 15vh;
+  background-color: lightgray;
+}
+
+/* メイン */
+.main {
+  display: flex;
+}
+
+.main-left {
+  width: 20vw;
+  height: calc(100vh - 15vh);
+  background-color: blue;
+  display: flex;
+}
+
+.main-right {
+  width: calc(100vw - 20vw);
+  height: calc(100vh - 15vh);
+  background-color: skyblue;
+  display: flex;
+}
