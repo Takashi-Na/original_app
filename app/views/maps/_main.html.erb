@@ -1,0 +1,40 @@
+<div class="main-left">
+  <%# 現在地取得するボタン %>
+  <div class="current-location" id="result">
+    <button onclick="getMyPlace()">現在地を取得</button>
+  </div>
+  <%# 検索フォーム %>
+  <div class="search-form">
+    <div class="form-text">
+      <p>・キーワード</p>
+      <input class="input-form" placeholder='例：お寿司'>
+    </div>
+    <div class="form-text">
+      <p>・距離（半径）</p>
+      <input class="input-form" placeholder='例：100m'>
+    </div>
+    <div class="form-text">
+      <p>・ジャンル</p>
+      <input class="input-form" placeholder='例：映え系'>
+    </div>
+    <div class="form-text">
+      <p>・評価</p>
+      <input class="input-form" placeholder='例：☆3.5以上'>
+    </div>
+    <div class="form-text">
+      <p>・価格帯</p>
+      <input class="input-form" placeholder='例：2000円以下'>
+    </div>
+  </div>
+  <%# 検索ボタン %>
+  <div class="search-btn">
+    <p>上記の条件で探す</p>
+    <button class="search-button">
+      <%= image_tag "search.png", class:"search-icon" %>
+    </button>
+  </div>
+</div>
+
+<div class="main-right" id='map'>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Vngw1pxY88Z23rk1Sh9mehYv69ucFNY&callback=initMap" ></script>
+</div>
